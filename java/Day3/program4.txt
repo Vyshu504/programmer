@@ -1,0 +1,25 @@
+import java.util.*;
+class Example12
+{
+ public static void main(String args[])
+  {
+  Scanner sc=new Scanner(System.in);
+  System.out.println("Enter a number");
+  int n=sc.nextInt();
+  if(n>=-100&&n<=100)
+   {
+     System.out.println("Good job");
+    }
+   else
+   {
+     System.out.println("wrong answer");
+    }
+  }
+}
+OUTPUT:
+C:\vyshu\jan>javac Example12.java
+
+C:\vyshu\jan>java Example12
+Enter a number
+100
+Good job

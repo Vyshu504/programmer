@@ -1,0 +1,29 @@
+import java.util.*;
+class day55
+{
+  public static void main(String args[])
+  {
+  Scanner sc=new Scanner(System.in);
+  int n=sc.nextInt();
+   char c='A';
+  for(int i=0;i<=n;i++)
+  {
+    for(int j=0;j<=i;j++)
+     {
+      System.out.print((char)(c+i));
+     }
+   System.out.println();
+   }
+}
+}
+Ouput:
+C:\vyshu>javac day55.java
+
+C:\vyshu>java day55
+5
+A
+BB
+CCC
+DDDD
+EEEEE
+FFFFFF

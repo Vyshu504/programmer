@@ -1,0 +1,32 @@
+PROGRAM-2
+class ifelse
+{
+ public static void main(String args[])
+{
+int n=8;
+ if(n%2==0)
+{
+  if(n>2&&n<6)
+   {
+     System.out.println("not weired");
+   }
+   else
+   if(n<6&&n<20)
+   {
+     System.out.println("weired");
+   }
+  else
+  if(n>20)
+    {
+     System.out.println("not weired");
+    }
+  else
+  {
+  System.out.println("weired");
+   } 
+  }
+ }
+}
+OUTPUT:
+C:\Users\LENOVO\Documents>java ifelse.java
+weired

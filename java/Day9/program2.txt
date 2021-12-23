@@ -1,0 +1,30 @@
+import java.util.*;
+class day92
+ {
+  public static void main(String[] args)
+   {
+     Scanner sc=new Scanner(System.in);
+     int row=sc.nextInt();
+     int coloum=sc.nextInt();
+      for(int i=1;i<=row;i++)
+       {
+        for(int j=1;j<=coloum;j++)
+         {
+           if(i==1 || i==row || j==coloum || j==1)
+              System.out.print("*");
+            else
+              System.out.print(" ");
+          }
+        System.out.println( );
+      }
+   }
+}
+OUTPUT:
+C:\vyshu\jan>javac day92.java
+
+C:\vyshu\jan>java day92
+3
+5
+*****
+*   *
+*****
