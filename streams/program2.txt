@@ -1,0 +1,17 @@
+import java.util.*;
+class Reduce{
+    public static void main(String arg[]){
+        ArrayList<Integer> ar=new ArrayList<Integer>();
+        ar.add(5);
+        ar.add(6);
+        ar.add(2);
+        ar.add(7);
+        int ar1=ar.stream().reduce(0,(element1,element2)->element1+element2);
+        System.out.println("the sum of all elements"+ar1);
+
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Reduce.java 
+PS C:\Users\LENOVO\Documents> java Reduce
+the sum of all elements20

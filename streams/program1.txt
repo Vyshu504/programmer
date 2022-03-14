@@ -1,0 +1,17 @@
+import java.util.*;
+class Stream{
+    public static void main(String args[]){
+        ArrayList<Integer>arr=new ArrayList<Integer>();
+        arr.add(10);
+        arr.add(8);
+        arr.add(2);
+        arr.add(5);
+        arr.add(3);
+        long count=arr.stream().count();
+        System.out.println("number of elements"+count);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Stream.java
+PS C:\Users\LENOVO\Documents> java Stream
+number of elements5
