@@ -1,0 +1,12 @@
+import java.util.*;
+class Min{
+    public static void main(String args[]){
+        List<Integer> list =Arrays.asList(4,7,9,3,0);
+       Integer var= list.stream().min(Integer::compare).get();
+       System.out.println(var);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Min.java
+PS C:\Users\LENOVO\Documents> java Min      
+0

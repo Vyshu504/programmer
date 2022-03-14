@@ -1,0 +1,24 @@
+import java.util.*;
+import java.io.*;
+import java.util.stream.Collectors;
+import java.util.ArrayList;
+import java.util.List;
+import java.util.stream.Stream;
+class Flatmap{
+    public static void main(String args[]){
+        List<String> list= Arrays.asList ("2","3","4","5");
+        List<String> list1=Arrays.asList("6","7","8");
+        List<String> list2=Arrays.asList("9","10");
+        List<List<String>> listOfList=Arrays.asList(list,list1,list2);
+        System.out.println(listOfList);
+        List<String>final_list = listOfList.stream().flatMap(List->List.stream()).collect(Collectors.toList());
+        System.out.println(final_list);
+
+       
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Flatmap.java
+PS C:\Users\LENOVO\Documents> java Flatmap
+[[2, 3, 4, 5], [6, 7, 8], [9, 10]]
+[2, 3, 4, 5, 6, 7, 8, 9, 10]
