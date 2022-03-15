@@ -1,0 +1,23 @@
+import java.util.*;
+class Day25{
+     public static void main(String args[]){
+         int arr[]={3,6,9,8,2};
+         int sum=0;
+         int product=1;
+         for(int i=0;i<arr.length;i++){
+             sum+=arr[i];
+             product*=arr[i];
+
+            }
+            if(sum%2==0){
+                System.out.println("sum is :"+sum);
+            }else
+              System.out.println("product is :"+product);
+            
+     }
+
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Day25.java
+PS C:\Users\LENOVO\Documents> java Day25
+sum is :28

@@ -1,0 +1,26 @@
+import java.util.*;
+class Day23{
+    public static void main(String args[]){
+        ArrayList<Integer> ar= new ArrayList<Integer>();
+        ar.add(25);
+        ar.add(45);
+        ar.add(58);
+        ar.add(6);
+        Integer m=ar.stream().max(Integer::compare).get();
+        Integer m1=ar.stream().min(Integer::compare).get();
+        System.out.println("maximum element"+m);
+        System.out.println("minimum element"+m1);
+        Integer[] arr=new Integer[ar.size()];
+        arr=ar.toArray(arr);
+        Arrays.sort(arr);
+        System.out.println("first occurance :"+arr[0]);
+        System.out.println("last occurance:"+arr[arr.length-1]);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Day23.java
+PS C:\Users\LENOVO\Documents> java Day23
+maximum element58
+minimum element6
+first occurance :6
+last occurance:58
