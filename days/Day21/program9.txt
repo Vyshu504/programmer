@@ -1,0 +1,30 @@
+import java.util.*;
+class Day29{
+   private static void FindCommonElement(String arr[],String arr1[]){
+        Set<String> set=new HashSet<>();
+        for(int i=0;i<arr.length;i++){
+            for(int j=0;j<arr1.length;j++)
+            {
+                if(arr[i]==arr1[i]){
+                    set.add(arr[i]);
+                    break;
+                }
+            }
+        }
+        for(String i:set)
+        {
+            System.out.print(i+" ");
+        }
+     }
+    public static void main(String args[]){
+        String arr[]={"vyshu","pravi","usha","pooji"};
+        String arr1[]={"vyshu","pravi","ayesha","aparna"};
+        System.out.println("common elements :");
+        FindCommonElement(arr,arr1);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Day29.java
+PS C:\Users\LENOVO\Documents> java Day29      
+common elements :
+vyshu pravi 

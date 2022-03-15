@@ -1,0 +1,21 @@
+import java.util.*;
+class Day26{
+    static void common(int arr[],int num){
+        for(int i=0;i<arr.length;i++)
+        {
+            for(int j=i+1;j<arr.length;j++){
+                if(arr[i]+arr[j]==num){
+                    System.out.println(arr[i]+"+"+arr[j]+"="+num);
+                }
+            }
+        }
+    }
+        public static void main(String args[]){
+            common(new int[]{2,8,4},6);
+        
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Day26.java
+PS C:\Users\LENOVO\Documents> java Day26
+2+4=6

@@ -1,0 +1,25 @@
+import java.util.*;
+class Day21{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int n=sc.nextInt();
+        int k=sc.nextInt();
+        for(int i=1;i<=n;i++){
+            for(int j=1;j<=i;j++){
+                System.out.print("Box" +k+" ");
+                k++;
+                
+            }
+            System.out.println();
+        }
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> java Day21
+5
+1
+Box1 
+Box2 Box3
+Box4 Box5 Box6
+Box7 Box8 Box9 Box10
+Box11 Box12 Box13 Box14 Box15
