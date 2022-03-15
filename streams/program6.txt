@@ -1,0 +1,15 @@
+import java.util.*;
+import java.util.stream.Stream;
+public class Toarray 
+{
+  public static void main(String args[])
+  {
+      Stream<String> list =Stream.of("nnn","bbb","mmm","ddd");
+      Object[] ar = list.toArray();
+     System.out.println(Arrays.toString(ar));
+  }   
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Toarray.java
+PS C:\Users\LENOVO\Documents> java Toarray      
+[nnn, bbb, mmm, ddd]

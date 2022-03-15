@@ -1,0 +1,12 @@
+import java.util.*;
+class Max{
+    public static void main(String args[]){
+        List<Integer> list =Arrays.asList(4,7,9,3,0);
+       Integer var= list.stream().max(Integer::compare).get();
+       System.out.println(var);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Max.java
+PS C:\Users\LENOVO\Documents> java Max
+9
