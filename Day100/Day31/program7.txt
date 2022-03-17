@@ -1,0 +1,20 @@
+import java.util.*;
+class Reversenumber{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        int remainder;
+        int reverse=0;
+        int num=sc.nextInt();
+        while(num!=0){
+            remainder=num%10;
+            reverse=reverse*10+remainder;
+            num=num/10;
+        }
+        System.out.println("reverse number is :"+reverse);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Reversenumber.java
+PS C:\Users\LENOVO\Documents> java Reversenumber      
+789
+reverse number is :987

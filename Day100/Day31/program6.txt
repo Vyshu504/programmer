@@ -1,0 +1,16 @@
+import java.util.*;
+class Factors{
+    public static void main(String arg[]){
+        int number=60;
+        System.out.print("fators of" +number+ "are:");
+        for(int i=1;i<=number;i++){
+            if(number%i==0){
+                System.out.print(i +" ");
+            }
+        }
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Factors.java
+PS C:\Users\LENOVO\Documents> java Factors      
+fators of60are:1 2 3 4 5 6 10 12 15 20 30 60 

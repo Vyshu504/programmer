@@ -1,0 +1,29 @@
+import java.util.*;
+class Nonrepeat{
+    public static void main(String args[]){
+        Scanner sc=new Scanner(System.in);
+        String str=sc.nextLine();
+        for(int i=0;i<str.length();i++){
+            boolean unique=true;
+            for(int j=0;j<str.length();j++){
+                if(i!=j && str.charAt(i)==str.charAt(j)){
+                    unique=false;
+                    break;
+                }
+            }
+            if(unique){
+                System.out.println("Non repeated character is : "+str.charAt(i));
+            }
+        }
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Nonrepeat.java
+PS C:\Users\LENOVO\Documents> java Nonrepeat
+vyshnavi
+Non repeated character is : y
+Non repeated character is : s
+Non repeated character is : h
+Non repeated character is : n
+Non repeated character is : a
+Non repeated character is : i

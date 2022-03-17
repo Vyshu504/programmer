@@ -1,0 +1,19 @@
+import java.util.*;
+class Largesmall{
+    public static void main(String args[]){
+        ArrayList<Integer> ar= new ArrayList<Integer>();
+        ar.add(25);
+        ar.add(45);
+        ar.add(58);
+        ar.add(6);
+        Integer largest=ar.stream().max(Integer::compare).get();
+        Integer smallest=ar.stream().min(Integer::compare).get();
+        System.out.println("largest element :"+largest);
+        System.out.println("smallest element:"+smallest);
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> javac Largesmall.java
+PS C:\Users\LENOVO\Documents> java Largesmall
+largest element :58
+smallest element:6
