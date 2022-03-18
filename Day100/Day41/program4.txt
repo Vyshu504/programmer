@@ -1,0 +1,36 @@
+
+        sarr=a;
+        spos=sc.nextInt();
+        System.out.println("source position"+spos);
+        darr=b;
+        dpos=sc.nextInt();
+        System.out.println("Destination position"+dpos);
+        int len=sc.nextInt();
+        System.out.println("length :"+len);
+        System.arraycopy(sarr,spos,darr,dpos,len);
+        System.out.println("after arraycopy method");
+        for(int i=0;i<n;i++){
+            System.out.println(b[i]+" ");
+        }
+
+    }
+}
+OUTPUT:
+PS C:\Users\LENOVO\Documents> java Array
+7
+1 2 3 4 3 2 1
+5 4 6 7 8 6 5 
+1 
+source position1
+2
+Destination position2
+4
+length :4
+after arraycopy method
+5 
+4 
+2 
+3 
+4 
+3 
+5
